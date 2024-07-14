@@ -1,27 +1,30 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5d3d8;  /* Aktualisierte hellere Rosa-Farbe */
+    background-color: #f5d3d8;  /* Angepasste Hintergrundfarbe */
     margin: 0;
     padding: 0;
-    display: flex;             /* Flexbox für die Zentrierung */
-    justify-content: center;   /* Zentriert den Inhalt horizontal */
-    align-items: center;       /* Zentriert den Inhalt vertikal */
-    height: 100vh;             /* Verwendet die volle Höhe des Viewports */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;  /* Breite des Containers anpassen */
     margin: auto;
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
-    text-align: center;        /* Zentriert den Text und andere Inhalte im Container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 input[type="email"], button {
-    width: 100%;               /* Lässt das Eingabefeld und den Button die volle Breite des Containers einnehmen */
+    width: 100%;
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 16px;
