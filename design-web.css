@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5d3d8;  /* Angepasste Hintergrundfarbe */
+    background-color: #f5d3d8;  /* Hellrosa */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 300px;  /* Breite des Containers anpassen */
+    max-width: 340px; /* Etwas enger für bessere Kontrolle */
     margin: auto;
     background: white;
     padding: 20px;
@@ -23,13 +23,17 @@ body {
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 20px; /* Mehr Platz unter der Überschrift */
+}
+
 input[type="email"], button {
     width: 100%;
     padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 16px;
+    margin: 8px 0; /* Gleicher Abstand oben und unten */
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box; /* Damit Padding die Breite nicht verändert */
 }
 
 button {
@@ -39,6 +43,7 @@ button {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 16px; /* Mehr Abstand zum Eingabefeld */
 }
 
 button:hover {
