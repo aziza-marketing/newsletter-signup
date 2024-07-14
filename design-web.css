@@ -1,21 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #FFB6C1;  /* Helles Rosa als Hintergrundfarbe */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;             /* Flexbox für die Zentrierung */
+    justify-content: center;   /* Zentriert den Inhalt horizontal */
+    align-items: center;       /* Zentriert den Inhalt vertikal */
+    height: 100vh;             /* Verwendet die volle Höhe des Viewports */
 }
 
 .container {
+    width: 100%;
     max-width: 600px;
     margin: auto;
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
+    text-align: center;        /* Zentriert den Text im Container */
 }
 
-input[type="email"] {
-    width: calc(100% - 22px);
+input[type="email"], button {
+    width: 100%;               /* Lässt das Eingabefeld und den Button die volle Breite des Containers einnehmen */
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 16px;
@@ -27,10 +33,6 @@ button {
     background-color: #0056b3;
     color: white;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
